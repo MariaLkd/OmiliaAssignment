@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.myprj.omiliaassingment.junit.CheckPhoneNumberRegion
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.03 s <<< FAILURE! - in com.myprj.omiliaassingment.junit.CheckPhoneNumberRegion
+phoneIs10DigitsAndStartsWith2  Time elapsed: 0.027 s  <<< ERROR!
+java.lang.NoSuchMethodException: com.myprj.omiliaassingment.junit.CheckPhoneNumberRegion.checkGreekPhoneNumber(java.lang.String)
+	at com.myprj.omiliaassingment.junit.CheckPhoneNumberRegion.phoneIs10DigitsAndStartsWith2(CheckPhoneNumberRegion.java:22)
+

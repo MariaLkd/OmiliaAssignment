@@ -1,4 +1,6 @@
-package com.myprj.omiliaassignment;
+package com.myprj.omiliaassignment.phonenumberinterpretation;
+
+
 
 import java.util.*;
 
@@ -6,6 +8,7 @@ public class UserInput {
     static Scanner sc = new Scanner(System.in);
     static CheckPhoneNumberRegion checkPhoneNumber = new CheckPhoneNumberRegion();
     static NumberAmbiguitiesPermutations numAmb = new NumberAmbiguitiesPermutations();
+    static CheckPhoneNumberRegion checkRegion = new CheckPhoneNumberRegion();
 
     public static void inputPhone() {
         while (true) {
@@ -17,13 +20,13 @@ public class UserInput {
 
     // prints the interpretations of the phone number to the console and their validity as greek phone numbers
     private static void checkPhoneNumber(String number) {
-        String trimmedInput = InterpretationMethods.removeSpaces(number);
-        if (InterpretationMethods.checkIfLong(trimmedInput)) {
+        String trimmedInput = Interpretation.removeSpaces(number);
+        if (Interpretation.checkIfLong(trimmedInput)) {
             LinkedHashMap<Integer, List<String>> possibleDigits = numAmb.digitsCombinationsList(number);
             List<String> possiblePhones = numAmb.phoneNumberPermutationsList(possibleDigits);
             for (int i = 0; i < possiblePhones.size(); i++) {
                 String validGreekNumber = "";
-                if(CheckPhoneNumberRegion.checkGreekPhoneNumber(possiblePhones.get(i))==true){validGreekNumber = "VALID";}
+                if(checkRegion.checkGreekPhoneNumber(possiblePhones.get(i))==true){validGreekNumber = "VALID";}
                 else {validGreekNumber="INVALID";}
                 System.out.println("Interpretation "+(i+1)+": "+possiblePhones.get(i)+"[phone number: "+validGreekNumber+"]");
             }

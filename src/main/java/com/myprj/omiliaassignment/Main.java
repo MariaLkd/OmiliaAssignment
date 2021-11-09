@@ -1,10 +1,10 @@
 package com.myprj.omiliaassignment;
 
+import com.myprj.omiliaassignment.phonenumberinterpretation.UserInput;
+
 public class Main {
 
-    final static UserInput ui = new UserInput();
-
     public static void main(String[] args) {
-        ui.inputPhone();
+        UserInput.inputPhone();
     }
 }
