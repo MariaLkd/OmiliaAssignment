@@ -1,0 +1,48 @@
+@options
+@packages
+@argfile
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'C:/Users/maria/OneDrive/Desktop/OmiliaAssignment-main/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2021. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/maria/OneDrive/Desktop/OmiliaAssignment-main/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'OmiliaAssignment 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'C:/Users/maria/OneDrive/Desktop/OmiliaAssignment-main/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'OmiliaAssignment 1.0-SNAPSHOT API'
+com.myprj.omiliaassignment
+com.myprj.omiliaassignment.phonenumberinterpretation
+'C:/Users/maria/OneDrive/Desktop/OmiliaAssignment-main/src/main/java/com/myprj/omiliaassignment/Main.java'
+'C:/Users/maria/OneDrive/Desktop/OmiliaAssignment-main/src/main/java/com/myprj/omiliaassignment/phonenumberinterpretation/CheckPhoneNumberRegion.java'
+'C:/Users/maria/OneDrive/Desktop/OmiliaAssignment-main/src/main/java/com/myprj/omiliaassignment/phonenumberinterpretation/Interpretation.java'
+'C:/Users/maria/OneDrive/Desktop/OmiliaAssignment-main/src/main/java/com/myprj/omiliaassignment/phonenumberinterpretation/NumberAmbiguitiesPermutations.java'
+'C:/Users/maria/OneDrive/Desktop/OmiliaAssignment-main/src/main/java/com/myprj/omiliaassignment/phonenumberinterpretation/UserInput.java'
+C:\Users\maria\OneDrive\Desktop\OmiliaAssignment-main\src\main\java = 1636470335000
+C:\Users\maria\OneDrive\Desktop\OmiliaAssignment-main\target\site\apidocs\allclasses-frame.html = 1636563096783
+C:\Users\maria\OneDrive\Desktop\OmiliaAssignment-main\target\site\apidocs\allclasses-noframe.html = 1636563096784
+C:\Users\maria\OneDrive\Desktop\OmiliaAssignment-main\target\site\apidocs\constant-values.html = 1636563096742
+C:\Users\maria\OneDrive\Desktop\OmiliaAssignment-main\target\site\apidocs\deprecated-list.html = 1636563096781
+C:\Users\maria\OneDrive\Desktop\OmiliaAssignment-main\target\site\apidocs\help-doc.html = 1636563096789
+C:\Users\maria\OneDrive\Desktop\OmiliaAssignment-main\target\site\apidocs\index-all.html = 1636563096778
+C:\Users\maria\OneDrive\Desktop\OmiliaAssignment-main\target\site\apidocs\index.html = 1636563096785
+C:\Users\maria\OneDrive\Desktop\OmiliaAssignment-main\target\site\apidocs\overview-frame.html = 1636563096726
+C:\Users\maria\OneDrive\Desktop\OmiliaAssignment-main\target\site\apidocs\overview-summary.html = 1636563096787
+C:\Users\maria\OneDrive\Desktop\OmiliaAssignment-main\target\site\apidocs\overview-tree.html = 1636563096773
+C:\Users\maria\OneDrive\Desktop\OmiliaAssignment-main\target\site\apidocs\package-list = 1636563096723
+C:\Users\maria\OneDrive\Desktop\OmiliaAssignment-main\target\site\apidocs\script.js = 1636563096791
+C:\Users\maria\OneDrive\Desktop\OmiliaAssignment-main\target\site\apidocs\stylesheet.css = 1636563096790

@@ -19,7 +19,7 @@ public class UserInput {
     }
 
     // prints the interpretations of the phone number to the console and their validity as greek phone numbers
-    private static void checkPhoneNumber(String number) {
+    public static void checkPhoneNumber(String number) {
         String trimmedInput = Interpretation.removeSpaces(number);
         if (Interpretation.checkIfLong(trimmedInput)) {
             LinkedHashMap<Integer, List<String>> possibleDigits = numAmb.digitsCombinationsList(number);
@@ -28,7 +28,7 @@ public class UserInput {
                 String validGreekNumber = "";
                 if(checkRegion.checkGreekPhoneNumber(possiblePhones.get(i))==true){validGreekNumber = "VALID";}
                 else {validGreekNumber="INVALID";}
-                System.out.println("Interpretation "+(i+1)+": "+possiblePhones.get(i)+"[phone number: "+validGreekNumber+"]");
+                System.out.println("Interpretation "+(i+1)+": "+possiblePhones.get(i)+" [phone number: "+validGreekNumber+"]");
             }
         } else {
             System.out.println("Not a valid phone number");
