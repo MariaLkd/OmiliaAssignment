@@ -17,7 +17,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author Maria
  */
-public class JUnit5 {
+public class PhoneInputTests {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
@@ -76,12 +76,20 @@ public class JUnit5 {
     }
 
     @Test
-    public void test_Combinations() {
+    public void test_CombinationsWithDoubleDigits() {
         String input = "13 25";
         UserInput.checkPhoneNumber(input);
         assertEquals("Interpretation 1: 1325 [phone number: INVALID]\r\n"
                 + "Interpretation 2: 13205 [phone number: INVALID]\r\n"
                 + "Interpretation 3: 10325 [phone number: INVALID]\r\n"
                 + "Interpretation 4: 103205 [phone number: INVALID]\r\n", outContent.toString());
+    }
+    
+    @Test
+    public void test_CombinationsWithDoubleAndSingleDigit() {
+        String input = "1 25";
+        UserInput.checkPhoneNumber(input);
+        assertEquals("Interpretation 1: 125 [phone number: INVALID]\r\n"
+                + "Interpretation 2: 1205 [phone number: INVALID]\r\n", outContent.toString());
     }
 }
